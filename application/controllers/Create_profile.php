@@ -32,6 +32,7 @@ class Create_profile extends CI_Controller {
 	 */
 	public function index($account_id='')
 	{
+		//Start from here
 		$data['page_name'] = 'Create Profile';
 		$data['couple_account_id'] = $this->session->userdata('couple_account_id');
 		$this->load->view('pages/create_profile',$data);
